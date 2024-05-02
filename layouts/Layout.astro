@@ -1,0 +1,72 @@
+---
+//import HeaderBand from "../components/HeaderBand.astro";
+//import { WhatsAppIconCall } from "../components/ui/WhatsAppIconCall";
+//import { LocationIconCall } from "../components/ui/LocationIconcall";
+//import BackGround from "../components/BackGround.astro";
+//import "@fontsource/montserrat";
+
+interface Props {
+  title: string;
+}
+const { title = "Pijamas" } = Astro.props;
+
+// import { generateDB, productosactivos } from "../db/dbutils";
+// if (!productosactivos) await generateDB();
+
+// export let productosactivos = [];
+import { ViewTransitions } from "astro:transitions";
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Tiendas Pijamas" content="Tiendas Pijamas" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body class="bg-imageBodyBackgrund fixed inset-0">
+    <!-- <BackGround /> -->
+    <header>
+      <!-- <HeaderBand /> -->
+      <div>Headre</div>
+    </header>
+    <section>
+      <!-- <WhatsAppIconCall client:load /> -->
+      <!-- <LocationIconCall client:load /> -->
+    </section>
+
+    <div class="mt-[77px] md:my-[115px]">
+      <slot />
+    </div>
+
+    <style>
+      * {
+        /* --moradobasico: #673ab7; ****stst*******/
+        --navbarbackground: #5d55ae;
+        --fondologo: #b39ddb;
+        --moradobasico: #5d55ae;
+        --moradobasicoOscuro: #484284;
+        --moradobasicoTransparente: rgba(93, 85, 174, 0.4);
+        --anchocelular: 420px;
+        --letraofertas: yellow;
+
+        --fondoSideBar: #ebeaf9;
+        --fondoSideBarTr: rgb(235, 234, 243, 0.7);
+        --fondoOpcionSideBar: #c2bfe4;
+        --fondoSubOpcionSideBar: #dedcef;
+
+        --bordePrecio: rgb(163, 152, 193);
+        --colorPrecio: rgb(41, 18, 105);
+        --fondoPrecio: white;
+        --fondoOferta: red;
+        --fondoInformativo: rgb(27, 97, 124);
+
+        font-family: "Montserrat", "Arial Narrow", Arial, sans-serif;
+      }
+    </style>
+  </body>
+</html>

@@ -1,20 +1,33 @@
 ---
-import SoloPrueba from "../components/SoloPrueba";
+import Layout from "../../layouts/Layout.astro";
+import { generateDB, productosactivos } from "../db/dbutils";
+
+const queryParams = Object.fromEntries(Astro.url.searchParams.entries());
+console.log("Query Params====> ", queryParams, queryParams.bd);
+//
+//Query params esperados:
+// bd; //URL Google de la base de datos alterna (opcional)
+// grupo; //Grupo de meracancia a mostrar a la entrada (opcional)
+// subgrupo = queryParams.subgrupo; //SubGrupo de meracancia a mostrar a la entrada (opcional)
+// soloOferta = queryParams.soloOferta; //Bool  (opcional)
+const {
+  bd: querybd,
+  grupo,
+  subgrupo,
+  soloOferta,
+  ...queryparamsLeft
+} = queryParams;
+
+// queryParams.bd && (await generateDB(queryParams.bd));
+
+// !productosactivos
+//   ? await generateDB()
+//   : console.log("No se requiere bajar la Base de Datos");
+
+generateDB();
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>PRUEBA DE ASTRO TIPO EXPERIMENTO</title>
-  </head>
-  <body>
-    <h1 class="text-center my-8 text-blue-800 font-bold text-xl">
-      PRUEBA DE ASTRO TIPO EXPERIMENTO !!!!!!!1
-    </h1>
-    <SoloPrueba client:load />
-    <div></div>
-  </body>
-</html>
+<Layout title="Tiendas Pijamas">
+  <!-- <main><Counter client:load /></main> -->
+  <main></main>
+</Layout>
