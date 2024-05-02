@@ -1,0 +1,238 @@
+---
+// import { productosactivos } from "../pages/index.astro";
+const { product } = Astro.props;
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+// import imgUrl from `/src/img/productos/${product.ref}.jpg`;
+// const imgUrl = `/src/img/productos/${product.ref}.jpg`; // Use template literals for string interpolation
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/img/productos/*.{jpeg,jpg,png,gif}"
+);
+
+console.log("Ïmages array", images);
+const direccion = `/src/img/productos/${product.ref}.jpg`;
+console.log("Direccion---", direccion);
+---
+
+<div class="tarjeta">
+  <Image
+    id="fotoProducto"
+    class="w-full rounded-[12px]"
+    src={images[direccion]()}
+    alt={product.ref}
+  />
+  <div
+    class="precio text-fondoOferta"
+    style=` bottom: ${product.preY}% ;  left: ${product.preX}%   `
+    id="precio"
+  >
+    <span>$</span>{product.pre}
+  </div>
+  <div
+    class="oferta"
+    style={`left:${product.ofeX}%; bottom:${product.ofeY}%; 
+        backgroundColor:${product.ofeColor}; 
+        outline: 1px dashed ${product.ofeColor}; 
+        visibility: ${product.preOfe ? "visible" : "hidden"};`}
+    id="oferta"
+  >
+    <div class="titulo-oferta">Oferta</div>
+    <div class="precio-oferta"><span>$</span>{product.preOfe}</div>
+  </div>
+  <div
+    class="informativo"
+    style={`left:${product.infX}%; bottom:${product.infY}%;   visibility: ${product.il1 || product.il2 || product.il3 ? "visible" : "hidden"};`}
+    id="informativo"
+  >
+    <div class="titulo-inf" id="I1">
+      {product.il1 === undefined ? " " : product.il1}
+    </div>
+    <div class="titulo-inf" id="I2">
+      {product.il2 === undefined ? " " : product.il2}
+    </div>
+    <div class="titulo-inf_bold" id="I3">
+      {product.il3 === undefined ? " " : product.il3}
+    </div>
+  </div>
+</div>
+
+<style>
+  /* -------------------PRECIO ------------------- */
+  .precio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    bottom: 18%;
+    left: 65%;
+    font-size: 20px;
+    color: var(--colorPrecio);
+    background-color: var(--fondoPrecio);
+    /* padding: 10% 2px 0 2px; */
+    width: 30%;
+    height: 16%;
+    font-weight: bold;
+    border-radius: 10%;
+    border-style: dotted;
+    border-color: var(--bordePrecio);
+    border-width: 3px;
+    /* visibility: hidden; */
+    text-align: center;
+    /* background-color: blueviolet; */
+  }
+
+  .precio span {
+    font-weight: lighter;
+    font-size: 12px;
+  }
+
+  .oferta {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    background-color: var(--fondoOferta);
+    border-radius: 50%;
+    height: 22%;
+    width: 22%;
+    box-shadow: 0 0 0 3px white;
+    outline: 0.8px dashed var(--fondoOferta);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    line-height: 1;
+    color: white;
+    /* visibility: hidden; */
+  }
+
+  .titulo-oferta {
+    /* font-family: sans-serif; */
+    font-weight: normal;
+    font-size: 12px;
+  }
+  .precio-oferta {
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .oferta span {
+    font-weight: normal;
+    font-size: 80%;
+  }
+  /* Circulito azul opcional inforamtivo----- */
+
+  .titulo-inf {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 55%;
+  }
+
+  .titulo-inf_bold {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 75%;
+  }
+  .titulo-inf_bold_bigger {
+    font-weight: bold;
+    font-size: 55%;
+  }
+
+  .informativo {
+    position: absolute;
+    left: 49%;
+    bottom: 72%;
+    background-color: var(--fondoInformativo);
+    border-radius: 50%;
+    height: 22%;
+    width: 22%;
+    box-shadow: 0 0 0 3px white;
+    outline: 1.5px dashed var(--fondoInformativo);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    line-height: 1.5;
+    color: white;
+    line-height: 1.2;
+    visibility: hidden;
+  }
+
+  .informativo span {
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  @media (min-width: 1000px) {
+    .precio {
+      font-size: 1.5rem;
+    }
+    .precio-oferta {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    .precio span {
+      font-weight: lighter;
+      font-size: 16px;
+    }
+    .oferta span {
+      font-weight: normal;
+      font-size: 75%;
+    }
+    .titulo-oferta {
+      font-weight: normal;
+      font-size: 90%;
+    }
+    .titulo-inf {
+      font-weight: normal;
+      font-size: 70%;
+    }
+    .titulo-inf_bold {
+      font-weight: normal;
+      font-size: 120%;
+    }
+  }
+
+  /* ----------------------fin de seccion de precios------------ */
+
+  /* -------------------tarjeta ------------------------ */
+  .tarjeta {
+    /* width: 400px;     */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border-color: var(--fondologo);
+    border-width: 8px;
+    /* background-color: #f3edfd; */
+    box-shadow: 3px 3px 12px rgba(41, 7, 83, 0.3);
+    transition-duration: 0.5s;
+    transition-delay: 0.85s;
+    transition-property: transform;
+    position: relative;
+    object-fit: contain;
+    /* padding: 4px 4px 0 3px; */
+  }
+  .tarjeta:hover {
+    box-shadow: 6px 6px 12px rgba(41, 7, 83, 0.4);
+  }
+
+  @media (min-width: 1200px) {
+    .tarjeta:hover {
+      transform: scale(1.2, 1.2);
+      z-index: 1;
+      /* padding: 4px 4px 0 3px; */
+    }
+  }
+
+  .photo-frame {
+    /* flex: 1; */
+    /* padding: 4px 4px 0 3px; */
+    /* position: relative; */
+  }
+
+  /* .image {
+    width: 100%;
+    border-radius: 12px;
+  } */
+</style>

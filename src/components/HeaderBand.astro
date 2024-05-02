@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import logoPijamasBlanco from "../img/banners/LOGO_PIJAMAS_BLANCO.png";
+import Drawer from "./ui/Drawer";
+import { HorizontalMenuBar } from "./ui/HorizontalNavBar";
+---
+
+<div class="z-10 fixed top-0 w-full flex flex-col justify-center items-center">
+  <div
+    class="w-full h-[52px] md:h-[85px] bg-fondologo bg-cover bg-fondoLogoImg"
+  >
+    <a class="" href="https://www.tiendaspijamas.com">
+      <Image
+        src={logoPijamasBlanco}
+        alt="sinLogo"
+        class="h-full object-scale-down w-full"
+      />
+    </a>
+
+    <div class="absolute left-0 top-[0px] md:hidden">
+      <Drawer client:load />
+    </div>
+  </div>
+
+  <div class="w-full hidden md:block">
+    <HorizontalMenuBar client:load />
+  </div>
+</div>

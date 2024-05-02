@@ -1,9 +1,9 @@
 ---
-//import HeaderBand from "../components/HeaderBand.astro";
-//import { WhatsAppIconCall } from "../components/ui/WhatsAppIconCall";
-//import { LocationIconCall } from "../components/ui/LocationIconcall";
-//import BackGround from "../components/BackGround.astro";
-//import "@fontsource/montserrat";
+import HeaderBand from "../components/HeaderBand.astro";
+import { WhatsAppIconCall } from "../components/ui/WhatsAppIconCall";
+import { LocationIconCall } from "../components/ui/LocationIconcall";
+import BackGround from "../components/BackGround.astro";
+import "@fontsource/montserrat";
 
 interface Props {
   title: string;
@@ -29,10 +29,10 @@ import { ViewTransitions } from "astro:transitions";
     <ViewTransitions />
   </head>
   <body class="bg-imageBodyBackgrund fixed inset-0">
-    <!-- <BackGround /> -->
+    <BackGround />
     <header>
-      <!-- <HeaderBand /> -->
-      <div>Headre</div>
+      <HeaderBand />
+      <!-- <div>HEADER!!!</div> -->
     </header>
     <section>
       <!-- <WhatsAppIconCall client:load /> -->
