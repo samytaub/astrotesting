@@ -2,21 +2,21 @@
 import Layout from "../layouts/Layout.astro";
 import { generateDB, productosactivos } from "../db/dbutils";
 
-const queryParams = Object.fromEntries(Astro.url.searchParams.entries());
-console.log("Query Params====> ", queryParams, queryParams.bd);
+// const queryParams = Object.fromEntries(Astro.url.searchParams.entries());
+// console.log("Query Params====> ", queryParams, queryParams.bd);
 //
 //Query params esperados:
 // bd; //URL Google de la base de datos alterna (opcional)
 // grupo; //Grupo de meracancia a mostrar a la entrada (opcional)
 // subgrupo = queryParams.subgrupo; //SubGrupo de meracancia a mostrar a la entrada (opcional)
 // soloOferta = queryParams.soloOferta; //Bool  (opcional)
-const {
-  bd: querybd,
-  grupo,
-  subgrupo,
-  soloOferta,
-  ...queryparamsLeft
-} = queryParams;
+// const {
+//   bd: querybd,
+//   grupo,
+//   subgrupo,
+//   soloOferta,
+//   ...queryparamsLeft
+// } = queryParams;
 
 // queryParams.bd && (await generateDB(queryParams.bd));
 
