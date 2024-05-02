@@ -2,13 +2,8 @@
 import { A as AstroError, c as InvalidImageService, d as ExpectedImageOptions, E as ExpectedImage, F as FailedToFetchRemoteImageDimensions, e as createComponent, f as ImageMissingAlt, r as renderTemplate, m as maybeRenderHead, g as addAttribute, s as spreadAttributes, h as createAstro, i as renderComponent, j as renderHead, k as renderSlot } from '../astro_DYzw0DtZ.mjs';
 import 'kleur/colors';
 import 'html-escaper';
-import { r as resolveSrc, i as isRemoteImage, a as isESMImportedImage, b as isLocalService, D as DEFAULT_HASH_PROPS } from '../astro/assets-service_QdkxcCwb.mjs';
 import 'clsx';
-import { jsx, Fragment, jsxs } from 'react/jsx-runtime';
-import { useState } from 'react';
-import * as NavigationMenu from '@radix-ui/react-navigation-menu';
-import { CaretDownIcon, CrossCircledIcon } from '@radix-ui/react-icons';
-import { MenuIcon } from 'lucide-react';
+import { r as resolveSrc, i as isRemoteImage, a as isESMImportedImage, b as isLocalService, D as DEFAULT_HASH_PROPS } from '../astro/assets-service_QdkxcCwb.mjs';
 /* empty css                            */
 
 const decoder = new TextDecoder();
@@ -988,197 +983,6 @@ const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
 const imageConfig = {"service":{"entrypoint":"astro/assets/services/sharp","config":{}},"domains":[],"remotePatterns":[]};
 					const getImage = async (options) => await getImage$1(options, imageConfig);
 
-const logoPijamasBlanco = new Proxy({"src":"/_astro/LOGO_PIJAMAS_BLANCO.bFl8okc9.png","width":1181,"height":472,"format":"png"}, {
-						get(target, name, receiver) {
-							if (name === 'clone') {
-								return structuredClone(target);
-							}
-							if (name === 'fsPath') {
-								return "E:/Curso HTML-CSS/pijastr/src/img/banners/LOGO_PIJAMAS_BLANCO.png";
-							}
-							
-							return target[name];
-						}
-					});
-
-function MenuVertical() {
-  return /* @__PURE__ */ jsx(Fragment, { children: /* @__PURE__ */ jsxs(NavigationMenu.Root, { orientation: "vertical", delayDuration: 3e3, className: "flex flex-col gap-2", children: [
-    /* @__PURE__ */ jsx(NavigationMenu.List, { className: "flex flex-col gap-2", children: /* @__PURE__ */ jsxs(NavigationMenu.Item, { className: "flex flex-col gap-1", children: [
-      /* @__PURE__ */ jsxs(NavigationMenu.Trigger, { className: "group flex items-center gap-1  text-white text-xl py-2 pl-8 bg-moradobasico w-full ", children: [
-        "Damas ",
-        /* @__PURE__ */ jsx(CaretDownIcon, { height: 28, "aria-hidden": true, className: "w-8   text-white transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180" })
-      ] }),
-      /* @__PURE__ */ jsxs(NavigationMenu.Content, { className: "flex flex-col gap-1", children: [
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas?oferta=true", className: "font-bold text-purple-950  py-2 pl-10 text-left bg-yellow-100 w-full", children: "Ofertas" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas", className: "font-bold text-purple-950  py-2 pl-10 text-left bg-fondoSubOpcionSideBar w-full", children: "Todo Damas" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas/dormilonas", className: "font-bold text-purple-950  py-2 pl-10 text-left bg-fondoSubOpcionSideBar w-full", children: "Dormilonas" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas/short", className: "font-bold text-purple-950  py-2 pl-10 text-left bg-fondoSubOpcionSideBar w-full", children: "Short" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas/Pantalon", className: "font-bold text-purple-950  py-2 pl-10 text-left bg-fondoSubOpcionSideBar w-full", children: "Pantalon" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas/capri", className: "font-bold text-purple-950  py-2 pl-10 text-left bg-fondoSubOpcionSideBar w-full", children: "Capri" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas/levantadoras", className: "font-bold text-purple-950  py-2 pl-10 text-left bg-fondoSubOpcionSideBar w-full", children: "Levantadoras" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas/bragas", className: "font-bold text-purple-950  py-2 pl-10 text-left bg-fondoSubOpcionSideBar w-full", children: "Bragas" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas/maternas", className: "font-bold text-purple-950  py-2 pl-10 text-left bg-fondoSubOpcionSideBar w-full", children: "Maternas" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas/TALLAS GRANDES", className: "font-bold text-purple-950  py-2 pl-10 text-left bg-fondoSubOpcionSideBar w-full", children: "Tallas Grandes" }) })
-      ] })
-    ] }) }),
-    /* @__PURE__ */ jsx(NavigationMenu.List, { className: "flex flex-col gap-2", children: /* @__PURE__ */ jsx(NavigationMenu.Item, { className: "flex flex-col gap-1", children: /* @__PURE__ */ jsx(NavigationMenu.Trigger, { className: "group flex items-center gap-1  text-white text-xl py-2 pl-8 bg-moradobasico w-full ", children: /* @__PURE__ */ jsx("a", { href: "/display/niñas", className: "w-full  text-left", children: "Niñas" }) }) }) }),
-    /* @__PURE__ */ jsx(NavigationMenu.List, { className: "flex flex-col gap-2", children: /* @__PURE__ */ jsxs(NavigationMenu.Item, { className: "flex flex-col gap-1", children: [
-      /* @__PURE__ */ jsxs(NavigationMenu.Trigger, { className: "group flex items-center gap-1  text-white text-xl py-2 pl-8 bg-moradobasico w-full ", children: [
-        "Caballeros ",
-        /* @__PURE__ */ jsx(CaretDownIcon, { height: 28, "aria-hidden": true, className: "w-8   text-white transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180" })
-      ] }),
-      /* @__PURE__ */ jsxs(NavigationMenu.Content, { className: "flex flex-col gap-1", children: [
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/caballeros?oferta=true", className: "font-bold text-purple-950  py-2 pl-10 text-left bg-yellow-100 w-full", children: "Ofertas" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/caballeros", className: "font-bold text-purple-950  py-2 pl-10 text-left bg-fondoSubOpcionSideBar w-full", children: "Todo Caballeros" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/caballeros/short", className: "font-bold text-purple-950  py-2 pl-10 text-left bg-fondoSubOpcionSideBar w-full", children: "Short" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/caballeros/pantalon", className: "font-bold text-purple-950  py-2 pl-10 text-left bg-fondoSubOpcionSideBar w-full", children: "Pantalón" }) })
-      ] })
-    ] }) }),
-    /* @__PURE__ */ jsx(NavigationMenu.List, { className: "flex flex-col gap-2", children: /* @__PURE__ */ jsx(NavigationMenu.Item, { className: "flex flex-col gap-1", children: /* @__PURE__ */ jsx(NavigationMenu.Trigger, { className: "group flex items-center gap-1  text-white text-xl py-2 pl-8 bg-moradobasico w-full ", children: /* @__PURE__ */ jsx("a", { href: "/display/niños", className: "w-full  text-left", children: "Niños" }) }) }) }),
-    /* @__PURE__ */ jsx(NavigationMenu.List, { className: "flex flex-col gap-2", children: /* @__PURE__ */ jsxs(NavigationMenu.Item, { className: "flex flex-col gap-1", children: [
-      /* @__PURE__ */ jsxs(NavigationMenu.Trigger, { className: "group flex items-center gap-1  text-white text-xl py-2 pl-8 bg-moradobasico w-full ", children: [
-        "Bebés ",
-        /* @__PURE__ */ jsx(CaretDownIcon, { height: 28, "aria-hidden": true, className: "w-8   text-white transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180" })
-      ] }),
-      /* @__PURE__ */ jsxs(NavigationMenu.Content, { className: "flex flex-col gap-1", children: [
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/bebe?oferta=true", className: "font-bold text-purple-950  py-2 pl-10 text-left bg-yellow-100 w-full", children: "Ofertas" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/bebe/varon", className: "font-bold text-purple-950  py-2 pl-10 text-left bg-fondoSubOpcionSideBar w-full", children: "Bebé Varón" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/bebe/hembra", className: "font-bold text-purple-950  py-2 pl-10 text-left bg-fondoSubOpcionSideBar w-full", children: "Bebé Hembra" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/bebes/oferta", className: "font-bold text-purple-950  py-2 pl-10 text-left bg-fondoSubOpcionSideBar w-full", children: "Bebé Ofertas" }) })
-      ] })
-    ] }) }),
-    /* @__PURE__ */ jsx(NavigationMenu.List, { className: "flex flex-col gap-2", children: /* @__PURE__ */ jsx(NavigationMenu.Item, { className: "flex flex-col gap-1", children: /* @__PURE__ */ jsx(NavigationMenu.Trigger, { className: "group flex items-center gap-1  text-white text-xl py-2 pl-8 bg-moradobasico w-full ", children: /* @__PURE__ */ jsx("a", { href: "/display/pantuflas", className: "w-full  text-left", children: "Pantuflas" }) }) }) })
-  ] }) });
-}
-
-function Drawer() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const toggleMenu = () => {
-    setMenuOpen((prev) => !prev);
-  };
-  return /* @__PURE__ */ jsxs("div", { className: "", children: [
-    /* @__PURE__ */ jsxs(
-      "button",
-      {
-        onClick: toggleMenu,
-        className: " text-white -mt-0 md:-mt-2 ml-4 w-12 flex flex-col items-center",
-        children: [
-          /* @__PURE__ */ jsx(MenuIcon, { className: "h-[38px] w-[38px]", strokeWidth: 2 }),
-          /* @__PURE__ */ jsx("p", { className: " w-20 text-xs md:text-sm -mt-1 -ml-2  rounded-full bg-moradobasico/60  ", children: "Catálogo" })
-        ]
-      }
-    ),
-    /* @__PURE__ */ jsx("div", { className: "w-screen cursor-pointer -mt-[2px] ", onClick: toggleMenu, children: /* @__PURE__ */ jsx(HorizontalMenuBarDummy, {}) }),
-    /* @__PURE__ */ jsx(
-      "div",
-      {
-        className: `   fixed w-1/2 md:w-[20%] top-20 pb-1 md:top-24 left-1 bg-moradobasicoTransparente/60    transform transition-all duration-1000 ${menuOpen ? "translate-y-0" : "-translate-y-full -translate-x-full scale-0 opacity-0"}`,
-        children: /* @__PURE__ */ jsxs("div", { className: "flex flex-col text-center gap-2", children: [
-          /* @__PURE__ */ jsx("div", { className: "flex justify-end pr-2", children: /* @__PURE__ */ jsx("button", { onClick: toggleMenu, className: "text-2xl font-bold text-white  mt-2 mr-1 outline-4 outline-white ", children: /* @__PURE__ */ jsx(CrossCircledIcon, { width: 32, height: 32 }) }) }),
-          /* @__PURE__ */ jsx("div", { className: " h-full w-full  ", children: /* @__PURE__ */ jsx(MenuVertical, {}) })
-        ] })
-      }
-    )
-  ] });
-}
-function HorizontalMenuBarDummy() {
-  return /* @__PURE__ */ jsxs(
-    "div",
-    {
-      className: "w-full bg-moradobasico text-white text mt-1\r\n        flex flex-row justify-evenly items-center",
-      children: [
-        /* @__PURE__ */ jsx("a", { children: "Damas" }),
-        /* @__PURE__ */ jsx("a", { children: "Caballeros" }),
-        /* @__PURE__ */ jsx("a", { children: "Niñas" }),
-        /* @__PURE__ */ jsx("a", { children: "Niños" }),
-        /* @__PURE__ */ jsx("a", { children: "Bebés" }),
-        /* @__PURE__ */ jsx("a", { children: "Pantuflas" })
-      ]
-    }
-  );
-}
-
-function HorizontalMenuBar() {
-  return /* @__PURE__ */ jsxs(
-    "div",
-    {
-      className: "w-full bg-moradobasico text-white text-lg\r\n    py-0.5 px-1 md:px-4 flex justify-evenly items-center",
-      children: [
-        /* @__PURE__ */ jsx(HorizontalMenuBarOneOptionDamas, { "client:load": true }),
-        /* @__PURE__ */ jsx("a", { href: "/display/niñas", children: "Niñas" }),
-        /* @__PURE__ */ jsx(HorizontalMenuBarOneOptionCaballeros, { "client:load": true }),
-        /* @__PURE__ */ jsx("a", { href: "/display/niños", children: "Niños" }),
-        /* @__PURE__ */ jsx(HorizontalMenuBarOneOptionBebes, { "client:load": true }),
-        /* @__PURE__ */ jsx("a", { href: "/display/pantuflas", children: "Pantuflas" })
-      ]
-    }
-  );
-}
-function HorizontalMenuBarOneOptionDamas() {
-  return /* @__PURE__ */ jsx(Fragment, { children: /* @__PURE__ */ jsxs(NavigationMenu.Root, { orientation: "horizontal", delayDuration: 1e3, className: "", children: [
-    /* @__PURE__ */ jsx(NavigationMenu.List, { className: "  ", children: /* @__PURE__ */ jsxs(NavigationMenu.Item, { className: " ", children: [
-      /* @__PURE__ */ jsxs(NavigationMenu.Trigger, { className: "group flex items-center gap-1  text-white   pl-8 bg-moradobasico    ", children: [
-        "Damas  ",
-        /* @__PURE__ */ jsx(CaretDownIcon, { height: 24, width: 24, className: "  text-white " })
-      ] }),
-      /* @__PURE__ */ jsxs(NavigationMenu.Content, { className: " grid grid-cols-2 gap-4  p-4 w-fit border-4 border-moradobasicoOscuro/40 rounded-2xl", children: [
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas", className: "w-full min-w-64 text-center text-xl p-4  rounded  text-white   bg-moradobasico border-4 border-fondoSideBar ", children: "Todo Damas" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas/dormilonas", className: "w-full min-w-64 text-center text-xl p-4  rounded  text-white   bg-moradobasico border-4 border-fondoSideBar ", children: "Dormilonas" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas/short", className: "w-full min-w-64 text-center text-xl p-4  rounded  text-white   bg-moradobasico border-4 border-fondoSideBar ", children: "Short" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas/Pantalon", className: "w-full min-w-64 text-center text-xl p-4  rounded  text-white   bg-moradobasico border-4 border-fondoSideBar ", children: "Pantalon" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas/capri", className: "w-full min-w-64 text-center text-xl p-4  rounded  text-white   bg-moradobasico border-4 border-fondoSideBar ", children: "Capri" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas/levantadoras", className: "w-full min-w-64 text-center text-xl p-4  rounded  text-white   bg-moradobasico border-4 border-fondoSideBar ", children: "Levantadoras" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas/bragas", className: "w-full min-w-64 text-center text-xl p-4  rounded  text-white   bg-moradobasico border-4 border-fondoSideBar ", children: "Bragas" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas/maternas", className: "w-full min-w-64 text-center text-xl p-4  rounded  text-white   bg-moradobasico border-4 border-fondoSideBar ", children: "Maternas" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas/TALLAS GRANDES", className: "w-full min-w-64 text-center text-xl p-4  rounded  text-white   bg-moradobasico border-4 border-fondoSideBar ", children: "Tallas Grandes" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/damas?oferta=true", className: "w-full min-w-64 text-center text-xl p-4  rounded  text-white   bg-moradobasico border-4 border-yellow-300 ", children: "Ofertas" }) })
-      ] })
-    ] }) }),
-    /* @__PURE__ */ jsx("div", { className: " absolute rounded-2xl  mt-2 bg-moradobasico/70 transform-all  transition data-[state=open]:-rotate-180 duration-1000  scale-100 ", children: /* @__PURE__ */ jsx(NavigationMenu.Viewport, { className: " " }) })
-  ] }) });
-}
-function HorizontalMenuBarOneOptionCaballeros() {
-  return /* @__PURE__ */ jsx(Fragment, { children: /* @__PURE__ */ jsxs(NavigationMenu.Root, { orientation: "horizontal", delayDuration: 1e3, className: "", children: [
-    /* @__PURE__ */ jsx(NavigationMenu.List, { className: "  ", children: /* @__PURE__ */ jsxs(NavigationMenu.Item, { className: " ", children: [
-      /* @__PURE__ */ jsxs(NavigationMenu.Trigger, { className: "group flex items-center gap-1  text-white   pl-8 bg-moradobasico    ", children: [
-        "Caballeros  ",
-        /* @__PURE__ */ jsx(CaretDownIcon, { height: 24, width: 24, "aria-hidden": true, className: "  text-white transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180" })
-      ] }),
-      /* @__PURE__ */ jsxs(NavigationMenu.Content, { className: " grid grid-cols-2 gap-4  p-4 w-fit border-4 border-moradobasicoOscuro/40 rounded-2xl", children: [
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/caballeros", className: "w-full min-w-64 text-center text-xl p-4  rounded  text-white   bg-moradobasico border-4 border-fondoSideBar ", children: "Todo Caballeros" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/caballeros/short", className: "w-full min-w-64 text-center text-xl p-4  rounded  text-white   bg-moradobasico border-4 border-fondoSideBar ", children: "Short" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/caballeros/Pantalon", className: "w-full min-w-64 text-center text-xl p-4  rounded  text-white   bg-moradobasico border-4 border-fondoSideBar ", children: "Pantalon" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/caballeros?oferta=true", className: "w-full min-w-48 text-center text-xl p-4  rounded  text-white   bg-moradobasico border-4 border-yellow-300 ", children: "Oferta" }) })
-      ] })
-    ] }) }),
-    /* @__PURE__ */ jsx("div", { className: " absolute rounded-2xl      mt-2 bg-moradobasico/70  ", children: /* @__PURE__ */ jsx(NavigationMenu.Viewport, {}) })
-  ] }) });
-}
-function HorizontalMenuBarOneOptionBebes() {
-  return /* @__PURE__ */ jsx(Fragment, { children: /* @__PURE__ */ jsxs(NavigationMenu.Root, { orientation: "horizontal", delayDuration: 1e3, className: "", children: [
-    /* @__PURE__ */ jsx(NavigationMenu.List, { className: "  ", children: /* @__PURE__ */ jsxs(NavigationMenu.Item, { className: " ", children: [
-      /* @__PURE__ */ jsxs(NavigationMenu.Trigger, { className: "group flex items-center gap-1  text-white   pl-8 bg-moradobasico    ", children: [
-        "Bebés  ",
-        /* @__PURE__ */ jsx(CaretDownIcon, { height: 24, width: 24, "aria-hidden": true, className: "  text-white transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180" })
-      ] }),
-      /* @__PURE__ */ jsxs(NavigationMenu.Content, { className: " grid grid-cols-2 gap-4  p-4 w-fit border-4 border-moradobasicoOscuro/40 rounded-2xl", children: [
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/bebe/varon", className: "w-full min-w-48 text-center text-xl p-4  rounded  text-white   bg-moradobasico border-4 border-fondoSideBar ", children: "Bebés Varón" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/bebe/hembra", className: "w-full min-w-48 text-center text-xl p-4  rounded  text-white   bg-moradobasico border-4 border-fondoSideBar ", children: "Bebés Hembra" }) }),
-        /* @__PURE__ */ jsx(NavigationMenu.Link, { asChild: true, children: /* @__PURE__ */ jsx("a", { href: "/display/bebe?oferta=true", className: "w-full min-w-48 text-center text-xl p-4  rounded  text-white   bg-moradobasico border-4 border-yellow-300 ", children: "Ofertas" }) })
-      ] })
-    ] }) }),
-    /* @__PURE__ */ jsx("div", { className: " absolute rounded-2xl     mt-2 bg-moradobasico/70  ", children: /* @__PURE__ */ jsx(NavigationMenu.Viewport, {}) })
-  ] }) });
-}
-
-const $$HeaderBand = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${maybeRenderHead()}<div class="z-10 fixed top-0 w-full flex flex-col justify-center items-center"> <div class="w-full h-[52px] md:h-[85px] bg-fondologo bg-cover bg-fondoLogoImg"> <a class="" href="https://www.tiendaspijamas.com"> ${renderComponent($$result, "Image", $$Image, { "src": logoPijamasBlanco, "alt": "sinLogo", "class": "h-full object-scale-down w-full" })} </a> <div class="absolute left-0 top-[0px] md:hidden"> ${renderComponent($$result, "Drawer", Drawer, { "client:load": true, "client:component-hydration": "load", "client:component-path": "E:/Curso HTML-CSS/pijastr/src/components/ui/Drawer", "client:component-export": "default" })} </div> </div> <div class="w-full hidden md:block"> ${renderComponent($$result, "HorizontalMenuBar", HorizontalMenuBar, { "client:load": true, "client:component-hydration": "load", "client:component-path": "E:/Curso HTML-CSS/pijastr/src/components/ui/HorizontalNavBar", "client:component-export": "HorizontalMenuBar" })} </div> </div>`;
-}, "E:/Curso HTML-CSS/pijastr/src/components/HeaderBand.astro", void 0);
-
-const $$BackGround = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`<!-- <div class="bg-imageBodyBackgrund fixed inset-0"></div> -->${maybeRenderHead()}<div class="bg-white bg-opacity-75 fixed inset-0 -z-50"></div>`;
-}, "E:/Curso HTML-CSS/pijastr/src/components/BackGround.astro", void 0);
-
 const $$Astro$3 = createAstro();
 const $$ViewTransitions = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$3, $$props, $$slots);
@@ -1192,7 +996,7 @@ const $$Layout = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
   Astro2.self = $$Layout;
   const { title = "Pijamas" } = Astro2.props;
-  return renderTemplate`<html lang="en" class="scroll-smooth" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="Tiendas Pijamas" content="Tiendas Pijamas"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.png"><meta name="generator"${addAttribute(Astro2.generator, "content")}><title>${title}</title>${renderComponent($$result, "ViewTransitions", $$ViewTransitions, { "data-astro-cid-sckkx6r4": true })}${renderHead()}</head> <body class="bg-imageBodyBackgrund fixed inset-0" data-astro-cid-sckkx6r4> ${renderComponent($$result, "BackGround", $$BackGround, { "data-astro-cid-sckkx6r4": true })} <header data-astro-cid-sckkx6r4> ${renderComponent($$result, "HeaderBand", $$HeaderBand, { "data-astro-cid-sckkx6r4": true })} <!-- <div>HEADER!!!</div> --> </header> <section data-astro-cid-sckkx6r4> <!-- <WhatsAppIconCall client:load /> --> <!-- <LocationIconCall client:load /> --> </section> <div class="mt-[77px] md:my-[115px]" data-astro-cid-sckkx6r4> ${renderSlot($$result, $$slots["default"])} </div>  </body> </html>`;
+  return renderTemplate`<html lang="en" class="scroll-smooth" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="Tiendas Pijamas" content="Tiendas Pijamas"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.png"><meta name="generator"${addAttribute(Astro2.generator, "content")}><title>${title}</title>${renderComponent($$result, "ViewTransitions", $$ViewTransitions, { "data-astro-cid-sckkx6r4": true })}${renderHead()}</head> <body class="bg-imageBodyBackgrund fixed inset-0" data-astro-cid-sckkx6r4> <!-- <BackGround /> --> <header data-astro-cid-sckkx6r4> <!-- <HeaderBand /> --> <!-- <div>HEADER!!!</div> --> </header> <section data-astro-cid-sckkx6r4> <!-- <WhatsAppIconCall client:load /> --> <!-- <LocationIconCall client:load /> --> </section> <div class="mt-[77px] md:my-[115px]" data-astro-cid-sckkx6r4> ${renderSlot($$result, $$slots["default"])} </div>  </body> </html>`;
 }, "E:/Curso HTML-CSS/pijastr/src/layouts/Layout.astro", void 0);
 
 const $$Astro$1 = createAstro();

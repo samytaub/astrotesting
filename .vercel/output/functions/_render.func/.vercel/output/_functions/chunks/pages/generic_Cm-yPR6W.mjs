@@ -1,4 +1,4 @@
-import { b as getConfiguredImageService, i as imageConfig } from './_grupo__C0dUDuKu.mjs';
+import { b as getConfiguredImageService, i as imageConfig } from './_grupo__op7kLfsp.mjs';
 import { c as isRemotePath, d as isRemoteAllowed } from '../astro/assets-service_QdkxcCwb.mjs';
 import * as mime from 'mrmime';
 

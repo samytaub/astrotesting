@@ -2,7 +2,7 @@
 import { e as createComponent, r as renderTemplate, i as renderComponent, h as createAstro, m as maybeRenderHead } from '../astro_DYzw0DtZ.mjs';
 import 'kleur/colors';
 import 'html-escaper';
-import { g as generateDB, p as productosactivos, $ as $$ProductCard, a as $$Layout } from './_grupo__C0dUDuKu.mjs';
+import { g as generateDB, p as productosactivos, $ as $$ProductCard, a as $$Layout } from './_grupo__op7kLfsp.mjs';
 
 const $$Astro = createAstro();
 const $$rubro = createComponent(async ($$result, $$props, $$slots) => {
